@@ -16,7 +16,7 @@ const createCollege = async function (req, res) {
         if (!regForName(name)) return res.status(400).send({ status: false, msg: "Invalid Name" })
 
         if (!(valid(fullName))) return res.status(400).send({ status: false, msg: "Provide a valid fullName" })
-        if (!(/   /g).test(fullName)) return res.status(400).send({ status: false, msg: "Invalid fullName" })
+        
 
         if (!(valid(logoLink))) return res.status(400).send({ status: false, msg: "Provide a valid logoLink" })
         if (!regForLink(logoLink)) return res.status(400).send({ status: false, msg: "Invalid Link" })
