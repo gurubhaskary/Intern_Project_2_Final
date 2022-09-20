@@ -5,9 +5,11 @@ const route = require('./routes/route.js');
 const { default: mongoose } = require('mongoose');
 const moment = require('moment');
 const app = express();
+const multer= require("multer")
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(multer().any()) //To get multi Form data like file upload
 
 
 mongoose.connect("mongodb+srv://raj_3028:kWaM507ps0Icsdg0@cluster0.pw23ckf.mongodb.net/group21Database", {
@@ -42,6 +44,11 @@ app.use(function (req, res) {
 
 
 
-app.listen(process.env.PORT || 3000, function () {
-    console.log('Express App Running on Port: ' + (process.env.PORT || 3000))
+// app.listen(process.env.PORT || 3000, function () {
+//     console.log('Express App Running on Port: ' + (process.env.PORT || 3000))
+// });
+
+//Fo frontEnd change port to 3001
+app.listen(process.env.PORT || 3001, function () {
+    console.log('Express App Running on Port: ' + (process.env.PORT || 3001))
 });

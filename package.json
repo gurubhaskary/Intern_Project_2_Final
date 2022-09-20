@@ -1,26 +1,52 @@
 {
 
   "name": "open_to_intern_project",
+
   "version": "1.0.0",
+
   "description": "Open to Intern Project(Project-02)(Group-21)",
+
   "main": "index.js",
+
   "scripts": {
+
     "test": "echo \"Error: no test specified\" && exit 1",
+
     "script": "node src/index.js"
+
   },
+
   "repository": {
+
     "type": "git",
+
     "url": "git+https://github.com/Raj3028/Project-02.git"
+
   },
+
   "author": "RAJESH KUMAR SAHOO, ABHISHEK TIWARI, Y GURU BHASKAR, RAHUL KUMAR",
+
   "license": "ISC",
+
   "bugs": {
+
     "url": "https://github.com/Raj3028/Project-02/issues"
+
   },
+
   "homepage": "https://github.com/Raj3028/Project-02#readme",
+
   "dependencies": {
+
     "express": "^4.18.1",
+
     "moment": "^2.29.4",
-    "mongoose": "^6.6.0"
+
+    "mongoose": "^6.6.0",
+
+    "multer": "^1.4.5-lts.1"
+
   }
+
 }
+
